@@ -94,14 +94,14 @@ Board.prototype.scorePosition = function(row, column, delta_y, delta_x) {
         return this.game.score;
     } else {
         // Return normal points
-        if (computer_points && !human_points) {
+        /*if (computer_points && !human_points) {
           return computer_points;
         } else if (human_points && !computer_points) {
           return -human_points;
         } else {
           return 0;
-        }
-        //return computer_points - human_points;
+        }*/
+        return computer_points - human_points;
     }
 }
 
